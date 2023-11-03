@@ -2,7 +2,7 @@
 
 ![laptop (1)](https://github.com/usamaasgharr/portfolio/assets/118630986/c4d20750-08ec-40ce-b4eb-76f7bc0f4a57)
 
-<a href ="https://this-my-portfolio.netlify.app/"><h1>Live Demo</h1></a>
+<h1><a href = "https://this-my-portfolio.netlify.app/" alt= "url" target = '_blank' style = "justify-content : center;">Live Demo</a></h1>
 
 
 # Getting Started with Create React App
