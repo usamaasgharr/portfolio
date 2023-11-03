@@ -1,3 +1,10 @@
+
+
+![laptop (1)](https://github.com/usamaasgharr/portfolio/assets/118630986/c4d20750-08ec-40ce-b4eb-76f7bc0f4a57)
+
+<a href ="https://this-my-portfolio.netlify.app/"><h1>Live Demo</h1></a>
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
