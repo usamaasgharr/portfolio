@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    /* background-color: black; */
+    align-items: center;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .footer {
+        display: block;
+
+    }
+}
