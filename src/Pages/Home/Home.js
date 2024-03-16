@@ -43,10 +43,10 @@ export default function Home() {
                 <div className='introduction'>
 
                     <p className='mt-5'>I'm doing <span className="primary">BSCS</span> from <span className='primary'> University of South Asia</span></p>
-                    <p>Currently enrolled in <span className='primary'> 7th Semester</span>.</p>
+                    <p>Currently enrolled in <span className='primary'> 8th Semester</span>.</p>
                     <p>I am fluent in classics like <span className='primary'>C++</span>, <span className='primary'>Java</span> and <span className='primary'>Javascript</span>.</p>
                     <p>My field of Interest's are building new <span className='primary'> Web Applications and Products</span>.</p>
-                    <p>Whenever possible, I also apply my passion for developing products with <span className="primary">Node js</span><br />   and Modern Javascript Library and Frameworks  like <span className="primary">React.js</span>.</p>
+                    <p>Whenever possible, I also apply my passion for developing products with <span className="primary">Node js</span>,<br /><span className="primary">Express Js</span>   and Modern Javascript Library and Frameworks  like <span className="primary">React.js</span>.</p>
                 </div>
 
                 <div className="avatar">
