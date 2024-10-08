@@ -14,16 +14,16 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank" className="button">
+        {props.ghLink ? <Button variant="primary" href={props.ghLink} target="_blank" className="button">
           <BsGithub /> GitHub
-        </Button>
+        </Button> : ''}
         {"\n"}
         {"\n"}
 
         {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
 
         
-          <Button
+          {props.demoLink ? <Button
 
           variant="primary"
             href={props.demoLink}
@@ -33,7 +33,7 @@ function ProjectCards(props) {
           >
             <CgWebsite /> &nbsp;
             {"Demo"}
-          </Button>
+          </Button> : ''}
         
       </Card.Body>
     </Card>

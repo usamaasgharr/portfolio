@@ -6,6 +6,7 @@ import { Row, Col } from "react-bootstrap";
 import eStore from "../../assets/images/laptop Store.png"
 import todo from "../../assets/images/laptop todo.png"
 import meme from "../../assets/images/laptop.png"
+import zelfi from '../../assets/images/zelfi.png'
 
 
 export default function Projects() {
@@ -16,6 +17,17 @@ export default function Projects() {
 
 
             <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+                <Col md={4} className="project-card">
+                    <ProjectCard
+                        imgPath={zelfi}
+                        isBlog={false}
+                        title="Zelfi Crypto Application"
+                        description="I developed a crypto application using the CoinGecko API to display real-time data for various cryptocurrencies, showcasing price changes, market capitalization, and volume. The app features pagination, search functionality, and a responsive UI built with Tailwind CSS, with state managed efficiently using the Context API."
+                        // ghLink="https://github.com/usamaasgharr/meme-generator"
+                        demoLink="https://zelfi.io/"
+                    />
+                </Col>
+
                 <Col md={4} className="project-card">
                     <ProjectCard
                         imgPath={eStore}
@@ -38,6 +50,9 @@ export default function Projects() {
                     />
                 </Col>
 
+
+            </Row>
+            <Row style={{ justifyContent: 'center' }}>
                 <Col md={4} className="project-card">
                     <ProjectCard
                         imgPath={meme}
