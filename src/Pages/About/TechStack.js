@@ -1,10 +1,9 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap';
-import { FaReact } from 'react-icons/fa'
 import { CgCPlusPlus } from "react-icons/cg";
 import { SiExpress, SiRedux } from 'react-icons/si'
 import { BsFiletypeCss, BsFillBootstrapFill, BsFiletypeSql } from "react-icons/bs"
-import { BiLogoJavascript, BiSolidFileHtml, BiLogoVisualStudio, BiLogoPython, BiLogoMongodb } from "react-icons/bi"
+import { BiSolidFileHtml, BiLogoVisualStudio, BiLogoPython, BiLogoMongodb } from "react-icons/bi"
 import { DiJava ,DiJavascript1, DiNodejs, DiReact, DiGit, DiVisualstudio} from 'react-icons/di'
 import { AiFillWindows } from 'react-icons/ai';
 

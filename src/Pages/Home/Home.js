@@ -32,7 +32,7 @@ export default function Home() {
                 </div>
 
                 <div className='main-image-container'>
-                    <img src={home_main} alt='main-image' className='main-image' />
+                    <img src={home_main} alt='main' className='main-image' />
                 </div>
             </div>
 
@@ -59,10 +59,10 @@ export default function Home() {
                 <h1 className='text-uppercase'>Find me on </h1>
                 <p className='text-capitalize'>feel free to <span className="primary">Connect</span> with me</p>
                 <h3 className='icons'>
-                    <a href="https://github.com/usamaasgharr" target='_blank'><AiFillGithub /></a>
-                    <a href="https://linkedin.com/in/usamaasgharr" target='_blank'><BiLogoLinkedin /></a>
-                    <a href="https://www.instagram.com/usama.asghar001/" target='_blank'><AiOutlineInstagram /></a>
-                    <a href="https://www.facebook.com/profile.php?id=100009794520703" target='_blank'><BiLogoFacebookCircle /></a>
+                    <a href="https://github.com/usamaasgharr" target='_blank' rel="noopener noreferrer"><AiFillGithub /></a>
+                    <a href="https://linkedin.com/in/usamaasgharr" target='_blank' rel="noopener noreferrer"><BiLogoLinkedin /></a>
+                    <a href="https://www.instagram.com/usama.asghar001/" target='_blank' rel="noopener noreferrer"><AiOutlineInstagram /></a>
+                    <a href="https://www.facebook.com/profile.php?id=100009794520703" target='_blank' rel="noopener noreferrer"><BiLogoFacebookCircle /></a>
                 </h3>
             </div>
         </div>
