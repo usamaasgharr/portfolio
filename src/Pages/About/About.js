@@ -17,7 +17,7 @@ export default function About() {
 
           <div className="about mt-5">
             <p>Hi Everyone, I am <span className="primary">Usama Asghar</span> from <span className="primary">Lahore, Pakistan</span>.</p><br />
-            <p>I am a final year student pursuing BSCS at University of South Asia.</p><br />
+            <p>Graduated from the University of South Asia with a BSCS Degree</p><br />
 
             <p>Apart from coding, some other activities that I love to do!
 
