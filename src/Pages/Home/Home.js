@@ -50,7 +50,7 @@ export default function Home() {
                       I hold a <span className="primary">BSCS</span> from the <span className="primary">University of South Asia</span> (Sep 2020 – Jun 2024). I focus on clean architecture, secure authentication, and integrations with payments, accounting, and AI APIs.
                     </p>
                     <p>
-                      Core strengths: <span className="primary">TypeScript</span>, <span className="primary">Next.js</span>, <span className="primary">React</span>, <span className="primary">Tailwind CSS</span>, <span className="primary">PostgreSQL</span>, <span className="primary">MongoDB</span>, and <span className="primary">Redis</span>.
+                      Core strengths: <span className="primary">TypeScript</span>, <span className="primary">Next.js</span>, <span className="primary">NestJS</span>, <span className="primary">Express.js</span>, <span className="primary">PostgreSQL</span>, <span className="primary">TypeORM</span>, and <span className="primary">GraphQL/Rest</span>.
                     </p>
                 </div>
 

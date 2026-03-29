@@ -10,7 +10,7 @@ export default function About() {
 
     <div>
       <div className='main-container'>
-        <div className='main-section'>
+        <div className='main-section' style={{width: '60%'}}>
           <h1 className='main-heading'>
             Know Who <span className="primary">I'M</span>
           </h1>
@@ -44,7 +44,7 @@ export default function About() {
         </div>
 
 
-        <div className='main-image-container'>
+        <div className='avatar'>
           <img src={about_main} alt='main' className='main-image' />
         </div>
       </div>

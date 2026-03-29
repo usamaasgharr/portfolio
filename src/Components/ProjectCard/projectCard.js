@@ -77,7 +77,7 @@ function ProjectCards(props) {
         >
           <Modal.Header closeButton closeVariant="white" className="project-modal-header">
             <div className="project-modal-title-block">
-              <span className="project-modal-eyebrow">
+              <span className="project-modal-eyebrow overflow-hidden">
                 <HiSparkles className="project-modal-eyebrow-icon" aria-hidden />
                 Project breakdown
               </span>
