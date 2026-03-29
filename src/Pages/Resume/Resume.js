@@ -1,21 +1,25 @@
-// import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import pdf from "../../assets/Resume.pdf";
-import resume from '../../assets/images/Resume.png'
 import './Resume.css'
 import { AiOutlineDownload } from "react-icons/ai";
-// import { Document, Page, pdfjs } from "react-pdf";
-// import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-// import "pdfjs-dist/build/pdf.worker";
-// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+import { Document, Page, pdfjs } from "react-pdf";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import "react-pdf/dist/esm/Page/TextLayer.css";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
-  // const [width, setWidth] = useState(1200);
+  const [width, setWidth] = useState(1200);
+  const [numPages, setNumPages] = useState(null);
 
-  // useEffect(() => {
-  //   setWidth(window.innerWidth);
-  // }, []);
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, []);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
 
   return (
     <div className="mt-5">
@@ -33,12 +37,22 @@ function ResumeNew() {
         </Row>
 
 
-        {/* <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document> */}
-
-        <div className="text-center">
-          <img src={resume} alt="" className="w-75" />
+        <div className="pdf-container d-flex justify-content-center mt-4">
+          <Document 
+            file={pdf} 
+            onLoadSuccess={onDocumentLoadSuccess}
+            className="pdf-document"
+          >
+            {Array.from(new Array(numPages), (el, index) => (
+              <div key={`page_${index + 1}`} className="pdf-page-wrapper">
+                <Page 
+                  pageNumber={index + 1} 
+                  scale={width > 786 ? 1.2 : 0.6}
+                  className="pdf-page"
+                />
+              </div>
+            ))}
+          </Document>
         </div>
 
 
