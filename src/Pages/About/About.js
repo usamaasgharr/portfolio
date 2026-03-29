@@ -10,7 +10,7 @@ export default function About() {
 
     <div>
       <div className='main-container'>
-        <div className='main-section' style={{width: '60%'}}>
+        <div className='main-section'>
           <h1 className='main-heading'>
             Know Who <span className="primary">I'M</span>
           </h1>

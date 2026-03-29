@@ -4,6 +4,7 @@
 .main-section{
     text-align: center;
     margin-top: 15%;
+    width: 60%;
 
 }
 
@@ -45,6 +46,7 @@
 @media(max-width: 600px){
     .main-section{
         margin-top: 25%;
+        width: 100%;
     }
     .main-image{
         display: none;
