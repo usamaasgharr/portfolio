@@ -1,0 +1,40 @@
+.pdf-container {
+  margin: 2rem 0;
+}
+
+.pdf-document {
+  max-width: 900px;
+  width: 100%;
+}
+
+.pdf-page-wrapper {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.pdf-page {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+
+/* Hide PDF controls and annotations */
+.react-pdf__Page__annotations {
+  display: none !important;
+}
+
+.react-pdf__Page__textContent {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .pdf-document {
+    width: 95%;
+  }
+  
+  .pdf-page-wrapper {
+    margin-bottom: 1rem;
+  }
+}
