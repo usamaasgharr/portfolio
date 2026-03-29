@@ -43,10 +43,15 @@ export default function Home() {
                 <div className='introduction'>
 
                     {/* <p className='mt-5'>I'm doing <span className="primary">BSCS</span> from <span className='primary'> University of South Asia</span></p> */}
-                    <p>Graduated from the <span className="primary"> University of South Asia </span> with a <span className="primary">BSCS </span> Degree</p>
-                    <p>I am fluent in classics like <span className='primary'>C++</span>, <span className='primary'>Java</span> and <span className='primary'>Javascript</span>.</p>
-                    <p>My field of Interest's are building new <span className='primary'> Web Applications and Products</span>.</p>
-                    <p>Whenever possible, I also apply my passion for developing products with <span className="primary">Node js</span>,<br /><span className="primary">Express Js</span>   and Modern Javascript Library and Frameworks  like <span className="primary">React.js</span>.</p>
+                    <p>
+                      Passionate <span className="primary">full stack developer</span> with <span className="primary">1.5+ years</span> of experience building scalable, high-performance web applications — from <span className="primary">Next.js</span> and <span className="primary">React</span> front ends to <span className="primary">Node.js</span>, <span className="primary">NestJS</span>, and <span className="primary">Django REST</span> backends.
+                    </p>
+                    <p>
+                      I hold a <span className="primary">BSCS</span> from the <span className="primary">University of South Asia</span> (Sep 2020 – Jun 2024). I focus on clean architecture, secure authentication, and integrations with payments, accounting, and AI APIs.
+                    </p>
+                    <p>
+                      Core strengths: <span className="primary">TypeScript</span>, <span className="primary">Next.js</span>, <span className="primary">React</span>, <span className="primary">Tailwind CSS</span>, <span className="primary">PostgreSQL</span>, <span className="primary">MongoDB</span>, and <span className="primary">Redis</span>.
+                    </p>
                 </div>
 
                 <div className="avatar">
@@ -60,7 +65,7 @@ export default function Home() {
                 <p className='text-capitalize'>feel free to <span className="primary">Connect</span> with me</p>
                 <h3 className='icons'>
                     <a href="https://github.com/usamaasgharr" target='_blank' rel="noopener noreferrer"><AiFillGithub /></a>
-                    <a href="https://linkedin.com/in/usamaasgharr" target='_blank' rel="noopener noreferrer"><BiLogoLinkedin /></a>
+                    <a href="https://www.linkedin.com/in/usamaasgharr/" target='_blank' rel="noopener noreferrer"><BiLogoLinkedin /></a>
                     <a href="https://www.instagram.com/usama.asghar001/" target='_blank' rel="noopener noreferrer"><AiOutlineInstagram /></a>
                     <a href="https://www.facebook.com/profile.php?id=100009794520703" target='_blank' rel="noopener noreferrer"><BiLogoFacebookCircle /></a>
                 </h3>

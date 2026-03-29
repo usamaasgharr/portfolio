@@ -23,6 +23,11 @@
     align-items: center;
 }
 
+.intro-container {
+    justify-content: space-between;
+    gap: 2rem;
+}
+
 
 
 .main-image-container {
@@ -47,8 +52,22 @@
 
 }
 
+.introduction {
+    flex: 1 1 620px;
+    min-width: 0;
+}
+
 .avatar {
     margin-left: 30px;
+    flex: 0 0 auto;
+}
+
+.avatar img {
+    display: block;
+    width: clamp(220px, 25vw, 330px);
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .find h1 {
@@ -166,6 +185,10 @@
     .avatar {
         margin-left: 0px;
         margin-top: 60px;
+    }
+
+    .avatar img {
+        width: min(80vw, 320px);
     }
 
 }

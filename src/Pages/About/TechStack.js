@@ -1,70 +1,79 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap';
-import { CgCPlusPlus } from "react-icons/cg";
-import { SiExpress, SiRedux } from 'react-icons/si'
-import { BsFiletypeCss, BsFillBootstrapFill, BsFiletypeSql } from "react-icons/bs"
-import { BiSolidFileHtml, BiLogoVisualStudio, BiLogoPython, BiLogoMongodb } from "react-icons/bi"
-import { DiJava ,DiJavascript1, DiNodejs, DiReact, DiGit, DiVisualstudio} from 'react-icons/di'
-import { AiFillWindows } from 'react-icons/ai';
-
+import {
+  SiTypescript,
+  SiJavascript,
+  SiPython,
+  SiPhp,
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiNodedotjs,
+  SiExpress,
+  SiNestjs,
+  SiDjango,
+  SiPostgresql,
+  SiMongodb,
+  SiRedis,
+  SiGraphql,
+} from 'react-icons/si'
+import { DiGit } from 'react-icons/di'
+import { BiLogoVisualStudio } from 'react-icons/bi'
 
 export default function TechStack() {
     return (
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
         <Col xs={4} md={2} className="tech-icons">
-          <CgCPlusPlus />
+          <SiTypescript title="TypeScript" />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+          <SiJavascript title="JavaScript" />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+          <SiPython title="Python" />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          <DiNodejs />
+          <SiPhp title="PHP" />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          <DiReact />
+          <SiReact title="React" />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          <SiRedux />
+          <SiNextdotjs title="Next.js" />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          <DiGit />
+          <SiTailwindcss title="Tailwind CSS" />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          <BsFiletypeSql />
+          <SiNodedotjs title="Node.js" />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          
-          <BiLogoMongodb/>
+          <SiExpress title="Express.js" />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          <BsFillBootstrapFill />
+          <SiNestjs title="NestJS" />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          <SiExpress/>
+          <SiDjango title="Django" />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          <BiLogoVisualStudio />
+          <SiPostgresql title="PostgreSQL" />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          <AiFillWindows />
+          <SiMongodb title="MongoDB" />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          <DiVisualstudio />
+          <SiRedis title="Redis" />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-          <BiLogoPython/>
+          <SiGraphql title="GraphQL" />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-        <BiSolidFileHtml /> 
+          <DiGit title="Git" />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
-        <BsFiletypeCss />
+          <BiLogoVisualStudio title="Visual Studio" />
         </Col>
-
       </Row>
       )
 }
-

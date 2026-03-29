@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="ScanShield project">
+  <defs>
+    <linearGradient id="ss-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a2e"/>
+      <stop offset="100%" style="stop-color:#2d1b4e"/>
+    </linearGradient>
+    <linearGradient id="ss-roof" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a2870"/>
+      <stop offset="100%" style="stop-color:#7b4da3"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" rx="12" fill="url(#ss-bg)"/>
+  <text x="200" y="42" text-anchor="middle" fill="#e8dff5" font-family="system-ui,Segoe UI,sans-serif" font-size="17" font-weight="600">ScanShield</text>
+  <text x="200" y="62" text-anchor="middle" fill="#a890c0" font-family="system-ui,Segoe UI,sans-serif" font-size="11">Roof inspection · AI reports</text>
+  <!-- Simple roof silhouette -->
+  <path d="M120 168 L200 108 L280 168 Z" fill="url(#ss-roof)" opacity="0.9"/>
+  <rect x="155" y="168" width="90" height="38" rx="2" fill="#2d1b4e" stroke="#623686" stroke-width="2"/>
+  <!-- Shield accent -->
+  <path d="M310 78 C310 78 335 88 335 108 C335 135 310 158 310 158 C310 158 285 135 285 108 C285 88 310 78 310 78 Z" fill="#623686" opacity="0.75"/>
+  <path d="M310 94 L310 142 M296 118 L324 118" stroke="#e8dff5" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <!-- Camera / doc hint -->
+  <rect x="65" y="108" width="44" height="36" rx="4" fill="none" stroke="#9b6dc6" stroke-width="2" opacity="0.85"/>
+  <circle cx="87" cy="124" r="8" fill="#623686" opacity="0.5"/>
+</svg>

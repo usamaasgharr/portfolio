@@ -1,68 +1,251 @@
-.navbar {
+/* Scoped: avoids global `li` font rules affecting the whole app */
 
-    margin-left: -10px;
-    position: fixed;
-    width: 100%;
+.portfolio-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1040;
+  margin: 0;
+  padding: 0.72rem 0;
+  border-bottom: 1px solid transparent;
+  background: linear-gradient(
+    180deg,
+    rgba(12, 6, 26, 0.35) 0%,
+    rgba(12, 6, 26, 0.08) 100%
+  );
+  backdrop-filter: blur(14px) saturate(1.15);
+  -webkit-backdrop-filter: blur(14px) saturate(1.15);
+  transition: border-color 0.35s ease, box-shadow 0.35s ease,
+    background 0.35s ease, padding 0.25s ease;
 }
 
-
-
-.navbar::before {
-    content: "";
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+.portfolio-navbar--scrolled {
+  padding: 0.55rem 0;
+  border-bottom-color: rgba(186, 130, 255, 0.22);
+  background: linear-gradient(
+    180deg,
+    rgba(18, 8, 38, 0.88) 0%,
+    rgba(14, 6, 30, 0.92) 100%
+  );
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.04) inset,
+    0 1px 40px rgba(120, 60, 180, 0.12);
 }
 
-.navbar-brand {
-    font-size: 30px;
-    margin-left: 0px;
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }
 
-.nav-item-margin {
+.no-scrollbar {
+  -ms-overflow-style: none;  /* for IE and Edge */
+  scrollbar-width: none;  /* for Firefox */
+}
+
+.portfolio-navbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: clamp(1rem, 3vw, 1.75rem);
+  padding-right: clamp(1rem, 3vw, 1.75rem);
+}
+
+.portfolio-navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 1.35rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.03em;
+  text-decoration: none !important;
+  color: #f5edff !important;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.portfolio-navbar-brand:hover {
+  transform: translateY(-1px);
+  filter: drop-shadow(0 4px 20px rgba(205, 95, 248, 0.35));
+}
+
+.portfolio-brand-mark {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  background: linear-gradient(145deg, #cd5ff8 0%, #623686 100%);
+  box-shadow: 0 0 14px rgba(205, 95, 248, 0.65);
+  flex-shrink: 0;
+}
+
+.portfolio-brand-text {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: visible !important;
+}
+
+.portfolio-brand-light {
+  color: #f5edff;
+}
+
+.portfolio-brand-primary {
+  color: #cd5ff8;
+}
+
+.portfolio-toggler {
+  border: 1px solid rgba(186, 130, 255, 0.45) !important;
+  border-radius: 0.5rem !important;
+  padding: 0.45rem 0.65rem !important;
+  transition: background 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.portfolio-toggler:hover,
+.portfolio-toggler:focus {
+  box-shadow: 0 0 20px rgba(205, 95, 248, 0.25) !important;
+}
+
+.portfolio-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(205, 95, 248, 0.25) !important;
+}
+
+.portfolio-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28238, 224, 255, 0.92%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.portfolio-collapse {
+  margin-top: 0.75rem;
+}
+
+.portfolio-nav-list {
+  gap: 0.15rem;
+}
+
+.portfolio-nav-list .nav-item {
+  display: flex;
+  align-items: stretch;
+}
+
+.portfolio-nav-link {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 0.95rem !important;
+  margin: 0.2rem 0;
+  border-radius: 999px;
+  font-size: 0.95rem !important;
+  font-weight: 500 !important;
+  color: rgba(238, 230, 252, 0.82) !important;
+  text-decoration: none !important;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background-clip: padding-box;
+  transition: color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease,
+    transform 0.2s ease !important;
+}
+
+.portfolio-nav-link:hover {
+  color: #fff !important;
+  background: rgba(98, 54, 134, 0.35);
+  transform: translateY(-1px);
+}
+
+.portfolio-nav-link--active {
+  color: #fff !important;
+  background: linear-gradient(
+    135deg,
+    rgba(98, 54, 134, 0.65) 0%,
+    rgba(60, 28, 100, 0.75) 100%
+  ) !important;
+}
+
+.portfolio-nav-icon {
+  display: inline-flex;
+  font-size: 1.15rem;
+  opacity: 0.9;
+  transition: transform 0.25s ease;
+}
+
+.portfolio-nav-link:hover .portfolio-nav-icon {
+  transform: scale(1.08);
+}
+
+.portfolio-nav-link--active .portfolio-nav-icon {
+  opacity: 1;
+  color: #eab8ff;
+}
+
+@media (min-width: 992px) {
+  .portfolio-navbar {
+    padding-top: 1rem;
+    padding-bottom: 0.82rem;
+  }
+
+  .portfolio-navbar--scrolled {
+    padding-top: 0.72rem;
+    padding-bottom: 0.62rem;
+  }
+
+  .portfolio-navbar-inner {
+    padding-top: 0.2rem;
+  }
+
+  .portfolio-collapse {
+    margin-top: 0;
+  }
+
+  .portfolio-nav-list {
     align-items: center;
-    margin-left: auto;
+    flex-direction: row !important;
+  }
+
+  .portfolio-nav-list .nav-item {
+    margin-left: 0.35rem;
+  }
+
+  .portfolio-nav-link {
+    margin: 0;
+    padding: 0.45rem 1.05rem !important;
+  }
 }
 
-li {
-    font-size: 20px;
+@media (max-width: 991px) {
+  .navbar-collapse.show.portfolio-collapse,
+  .navbar-collapse.collapsing.portfolio-collapse {
+    padding: 0.75rem 0.5rem 0.85rem;
+    border-radius: 0.85rem;
+    margin-top: 0.85rem;
+    background: linear-gradient(
+      165deg,
+      rgba(20, 10, 40, 0.95) 0%,
+      rgba(14, 8, 32, 0.98) 100%
+    );
+    border: 1px solid rgba(140, 100, 200, 0.28);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.45);
+  }
 
+  .portfolio-nav-link {
+    width: fit-content;
+    max-width: 100%;
+    justify-content: flex-start;
+    border-radius: 0.65rem;
+  }
+
+  .portfolio-nav-list .nav-item {
+    width: 100%;
+  }
 }
-.navbar {
-    backdrop-filter: blur(30px);
-    background: rgba(255, 255, 255, 0.03);
-    transition: 0.2s;
-}
 
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-navbar,
+  .portfolio-navbar-brand,
+  .portfolio-nav-link,
+  .portfolio-nav-icon {
+    transition: none !important;
+  }
 
-
-@media (min-width: 768px) {
-    
-    .navbar{
-        backdrop-filter: blur(0px);
-        background: transparent;
-        transition: 0.2s;
-        
-    }
-
-    .navbar-blur {
-        backdrop-filter: blur(15px);
-        background: rgba(255, 255, 255, 0.03);
-        transition: 0.2s;
-    }
-
-    li {
-        margin-left: 70px;
-        margin-bottom: 10px;
-    }
-
-    .navbar-brand {
-        font-size: 30px;
-        margin-left: 50px;
-    }
-    
+  .portfolio-navbar-brand:hover,
+  .portfolio-nav-link:hover {
+    transform: none;
+  }
 }
