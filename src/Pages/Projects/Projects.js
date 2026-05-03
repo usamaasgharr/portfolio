@@ -3,9 +3,9 @@ import './Projects.css'
 
 import ProjectCard from '../../Components/ProjectCard/projectCard'
 import { Row, Col } from "react-bootstrap";
-import eStore from "../../assets/images/laptop Store.png"
-import todo from "../../assets/images/laptop todo.png"
-import meme from "../../assets/images/laptop.png"
+// import eStore from "../../assets/images/laptop Store.png"
+// import todo from "../../assets/images/laptop todo.png"
+// import meme from "../../assets/images/laptop.png"
 import zelfi from '../../assets/images/zelfi.png'
 import franfinance from '../../assets/images/franfinance.svg'
 import donutnv from '../../assets/images/donutnv.svg'
