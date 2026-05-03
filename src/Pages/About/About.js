@@ -44,7 +44,7 @@ export default function About() {
         </div>
 
 
-        <div className='avatar'>
+        <div className='main-image-container'>
           <img src={about_main} alt='main' className='main-image' />
         </div>
       </div>

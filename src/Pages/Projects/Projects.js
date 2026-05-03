@@ -10,6 +10,7 @@ import zelfi from '../../assets/images/zelfi.png'
 import franfinance from '../../assets/images/franfinance.svg'
 import donutnv from '../../assets/images/donutnv.svg'
 import scanshield from '../../assets/images/scanshield.svg'
+import greeta from '../../assets/images/greeta.svg'
 
 const franFinanceBullets = [
   'Developed FranFinance, a platform enabling Signarama franchises to securely connect their QuickBooks and Xero accounts via OAuth and grant read permissions for financial statements.',
@@ -38,6 +39,15 @@ const scanShieldBullets = [
   'Enhanced communication and data-driven decision-making for inspection teams and clients through AI-powered analysis and automated reporting.',
 ]
 
+const greetaBullets = [
+  'Developed Greeta.ai, an automated SaaS platform that enables businesses to instantly generate professional AI phone audio, including IVR prompts and on-hold music.',
+  'Engineered a robust NestJS backend integrated with the ElevenLabs API for high-quality voice synthesis and used FFmpeg for server-side audio processing and watermarking.',
+  'Implemented a complex role-based access control (RBAC) system across organization, project, and folder levels to support enterprise workflows.',
+  'Built a credit-based billing architecture powered by Stripe for secure, usage-driven monetization.',
+  'Developed a high-performance Next.js 14 frontend with Zustand for script generation, audio previewing, and smooth UX.',
+  'Delivered secure audio delivery using AWS S3 signed URLs with scalable backend support via PostgreSQL/TypeORM and Redis.',
+]
+
 export default function Projects() {
     return (
         <div className='main mt-5 text-center'>
@@ -63,9 +73,9 @@ export default function Projects() {
                         imgPath={donutnv}
                         isBlog={false}
                         title="DonutNV — CRM & Booking"
-                        description="Full-stack CRM and public booking for DonutNV franchises: Google Maps–based scheduling, Square menus and split payments, invoicing, and franchisor dashboards for fleets and operations."
+                        description="CRM and public booking for DonutNV franchises: Next.js and Tailwind UI, Python Django REST backend, Celery for async work, Square payments, plus Maps-based scheduling and franchisor dashboards."
                         modalRole="Full-Stack Developer – DonutNV CRM & Booking Platform (via Scaylar Technologies)"
-                        technologies="React/Next.js, Node.js, Express.js, MongoDB, Google Maps API, Square API, OAuth, Payment Integration"
+                        technologies="Next.js, Python, Django REST Framework, Tailwind CSS, Square API, Celery, Google Maps API"
                         detailBullets={donutNVBullets}
                     />
                 </Col>
@@ -84,6 +94,18 @@ export default function Projects() {
 
                 <Col md={4} className="project-card">
                     <ProjectCard
+                        imgPath={greeta}
+                        isBlog={false}
+                        title="Greeta.ai — Self-Serve SaaS"
+                        description="Automated AI phone-audio SaaS for IVR and on-hold music with NestJS, ElevenLabs, FFmpeg processing, RBAC, Stripe credits, and secure AWS S3 delivery."
+                        modalRole="Full-Stack Developer – Greeta.ai (Self-Serve SaaS Platform)"
+                        technologies="NestJS, Next.js 14, PostgreSQL (TypeORM), TypeScript, ElevenLabs API, AWS S3, FFmpeg, Stripe, Redis, Zustand"
+                        detailBullets={greetaBullets}
+                    />
+                </Col>
+
+                <Col md={4} className="project-card">
+                    <ProjectCard
                         imgPath={zelfi}
                         isBlog={false}
                         title="Zelfi Crypto Application"
@@ -93,7 +115,7 @@ export default function Projects() {
                     />
                 </Col>
 
-                <Col md={4} className="project-card">
+                {/* <Col md={4} className="project-card">
                     <ProjectCard
                         imgPath={eStore}
                         isBlog={false}
@@ -102,9 +124,9 @@ export default function Projects() {
                         ghLink="https://github.com/usamaasgharr/fakeStore"
                         demoLink="https://fakestore-123.netlify.app/"
                     />
-                </Col>
+                </Col> */}
 
-                <Col md={4} className="project-card">
+                {/* <Col md={4} className="project-card">
                     <ProjectCard
                         imgPath={todo}
                         isBlog={false}
@@ -113,12 +135,12 @@ export default function Projects() {
                         ghLink="https://github.com/usamaasgharr/todo-app"
                         demoLink="https://react-todo-app1234.netlify.app/"
                     />
-                </Col>
+                </Col> */}
 
 
             </Row>
             <Row style={{ justifyContent: 'center' }}>
-                <Col md={4} className="project-card">
+                {/* <Col md={4} className="project-card">
                     <ProjectCard
                         imgPath={meme}
                         isBlog={false}
@@ -127,7 +149,7 @@ export default function Projects() {
                         ghLink="https://github.com/usamaasgharr/meme-generator"
                         demoLink="https://meme0generator.netlify.app/"
                     />
-                </Col>
+                </Col> */}
             </Row>
         </div>
     )
